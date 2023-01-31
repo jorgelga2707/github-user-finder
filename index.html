@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="./app.css">
+    <title>Reto -Api</title>
+  </head>
+  <body>
+    <section
+      class="container vh-100 d-flex align-items-center justify-content-center"
+    >
+      <div>
+        <h3>Github Finder</h3>
+        <div class="row">
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="github-search"
+              class="form-control"
+              placeholder="Buscar Usuario"
+            />
+          </div>
+          <div class="col-md-2">
+            <div class="d-grid gap-2">
+              <button id="github-action-search" class="btn btn-danger">Search</button>
+            </div>
+          </div>
+          <div class="col-md-12 mt-4">
+            <div class="card bg-blue-dark">
+              <div class="card-body p-5">
+              <div class="row">
+                <div class="col-md-2">
+                  <img
+                    id="img-profile"
+                    src=""
+                    alt="logo"
+                    width="100"
+                    height="100"
+                    class="rounded-circle img-fluid"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h4 id="github-name">The Octocat</h4>
+                      <p id="github-username" class="text-primary">@Octocat</p>
+                      <p id="github-bio">This profile no bio</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <p id="github-joined">Joined 16 January 2020</p>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="card bg-blue-dark">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <p>Repos</p>
+                              <h4 id="github-repos">8</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Followers</p>
+                              <h4 id="github-followers">18</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Following</p>
+                              <h4 id="github-following">28</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                     <div class="row">
+                      <div class="col-md-6">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="github-location">Lima Peru</span>
+                      </div>
+                      <div class="col-md-6">
+                        <i class="fa-solid fa-link"></i>
+                        <span id="github-url">Lima Peru</span>
+                      </div>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
